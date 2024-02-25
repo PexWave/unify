@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/features/authentication/screens/login/login.dart';
-import 'package:unify/navigation_menu.dart';
 
 
 class MyApp extends StatelessWidget {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:unify/features/authentication/screens/signup/signup.dart';
+import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 
@@ -54,7 +55,7 @@ class LoginForm extends StatelessWidget {
                   
               const SizedBox(height: TSizes.spaceBtwSections), 
           
-              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: () {}, child: const Text(TTexts.loginTitle))),
+              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: () => Get.to(() => const CustomBottomNavbar()), child: const Text(TTexts.loginTitle))),
               const SizedBox(height: TSizes.spaceBtwItems,),
               SizedBox(width: double.infinity,child: OutlinedButton(onPressed: () => Get.to(() => const SignUpScreen()), child: const Text(TTexts.signupTitle))),
           
