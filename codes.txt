@@ -1,0 +1,13 @@
+NavigationBar(
+        destinations: const [
+           NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
+           NavigationDestination(icon: Icon(Iconsax.shop), label: 'Shop'),
+           NavigationDestination(icon: Icon(Iconsax.heart), label: 'Organizations'),
+           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+
+        ],
+        );
+
+
+//PLAY MULTIPLE VIDEOS LINK
+https://github.com/flutter/flutter/issues/25558
