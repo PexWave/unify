@@ -11,3 +11,153 @@ NavigationBar(
 
 //PLAY MULTIPLE VIDEOS LINK
 https://github.com/flutter/flutter/issues/25558
+
+
+
+
+
+
+
+   final course = ''.obs;
+    final college = ''.obs;
+    final year = ''.obs;
+
+
+        final firstName = TextEditingController();
+    final lastName = TextEditingController();
+
+
+
+              Row(
+            children: [
+
+              //FIRST NAME
+              Expanded(
+                child: TextFormField(
+                  controller: signUpFormController.firstName,
+                  validator: (value) => TValidator.genericValidator(value),
+                  expands: false,
+                  decoration: const InputDecoration(
+                  labelText: TTexts.firstName,
+                  prefixIcon: Icon(Iconsax.user),
+                
+                  ),
+                ),
+              ),
+              const SizedBox(width: TSizes.spaceBtwInputFields,),
+
+              //LAST NAME
+              Expanded(
+                child: TextFormField(
+                  validator: (value) => TValidator.genericValidator(value),
+
+                  controller: signUpFormController.lastName,
+                  expands: false,
+                  decoration: const InputDecoration(
+                  labelText: TTexts.lastName,
+                  prefixIcon: Icon(Iconsax.user),
+                
+                  ),
+
+                ),
+              ),
+            ],
+          ),
+    
+
+
+
+
+
+
+        //COLLEGE
+          
+        DynamicSearchDropdown(
+          hintText: TTexts.collegeText,
+          items: TCollegeWithCourses.collegeNames,
+          onChanged: (value) {
+            controller.courses.value = TCollegeWithCourses.getcollegeCourses(value);
+            signUpFormController.college.value = value;
+          },
+          
+        ),
+        
+        const SizedBox(height: TSizes.spaceBtwInputFields),
+        
+        //COURSE
+        DynamicSearchDropdown(
+          hintText: TTexts.courseText,
+          items: controller.courses,
+          onChanged: (value) => (signUpFormController.course.value = value),
+            ),
+        
+        const SizedBox(height: TSizes.spaceBtwInputFields),
+        
+
+        //YEAR
+        CustomDropdown(
+          hintText: TTexts.studentYear,
+          items: TTexts.studentYears,
+          onChanged: (value) => signUpFormController.year.value = value,
+
+            ),
+        
+        const SizedBox(height: TSizes.spaceBtwInputFields),
+    
+       
+
+               //PHONE NUMBER
+        TextFormField(
+          controller: signUpFormController.phoneNo,
+          validator: (value) => TValidator.validatePhoneNo(value),
+          decoration: const InputDecoration(
+            labelText: TTexts.phoneNo,
+            prefixIcon: Icon(Iconsax.call)
+          ),
+        ),
+    
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
+
+
+
+
+
+        //NavigationBar
+        import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
+
+class CustomBottomNavbar extends StatelessWidget {
+  const CustomBottomNavbar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final controller = Get.put(NavigationController());
+
+    return Scaffold(
+      
+      bottomNavigationBar: Obx(
+        () => NavigationBar(
+          selectedIndex: controller.selectedIndex.value,
+          onDestinationSelected: (index) => controller.selectedIndex.value = index,
+          destinations: const [
+             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
+             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Shop'),
+             NavigationDestination(icon: Icon(Iconsax.heart), label: 'Orgs'),
+             NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+        
+          ],
+          ),
+      ),
+    body: Obx(() => controller.screens[controller.selectedIndex.value]),
+    
+    );
+  }
+}
+
+
+class NavigationController extends GetxController {
+  final screens = [const HomeFeed(),Container(color: Colors.blue),Container(color: Colors.red),Container(color: Colors.yellow),];
+  final Rx<int> selectedIndex = 0.obs;
+}

@@ -5,41 +5,39 @@ import 'package:get/get.dart';
 
 
 
-class HomeFeed extends StatefulWidget {
+class HomeFeed extends GetView<CustomVideoPlayerController> {
   const HomeFeed({super.key});
 
   @override
-  State<HomeFeed> createState() => _HomeFeedState();
-}
-
-class _HomeFeedState extends State<HomeFeed> {
-final videoController = Get.put(CustomVideoPlayerController());
-
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-            Container(
-              child: videoController.controller.value.isInitialized
-              ? AspectRatio(
-                  aspectRatio: 9.0/16.0,
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        videoController.controller.value.isPlaying
-                            ? videoController.controller.pause()
-                            : videoController.controller.play();
-                      });
-                    },
-                    child: VideoPlayer(videoController.controller),
-                    ),
-                )
-              : const Center(child: Text('loading')),
-            )
-        ],
-      ),
 
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+             Container(
+              alignment: Alignment.center,
+                child: controller.obx((state) => 
+                AspectRatio(
+                    aspectRatio: 9.0/16.0,
+                    child: GestureDetector(
+                      onTap: () {
+                
+                          state.value.isPlaying
+                              ? state.pause()
+                              : state.play();
+                  
+                      },
+                      child: VideoPlayer(state),
+                      ),
+                  ),
+                  onLoading: const Center(child: Text('loading'))
+                ),
+              )
+          ],
+        ),
+      
+      ),
     );
   }
 }

@@ -28,6 +28,8 @@ class TSizes {
   static const double buttonWidth = 120.0;
   static const double buttonElevation = 4.0;
 
+  //DropDown Sizes
+
   //Appbar height
   static const appBarHeight = 56.0;
 

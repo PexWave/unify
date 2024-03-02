@@ -18,8 +18,17 @@ class TTexts {
   static const String orSignUpWith = "or sign up with";
   static const String password = "Password";
   static const String newPassword = "New password";
+  static const String confirmPassword = "Confirm password";
+
   static const String createAccount = "Create account";
   static const String alreadyHaveAnAccount = "Already have an account?";
+  static const String yourAccountCreatedTitle = "You have been registered!";
+  static const String yourAccountCreatedSubtitle = "Please verify your email";
+
+  static const String tContinue = "Continue";
+  static const String confirmEmail = "Confirm Email";
+  static const String confirmEmailSubtitle = "Please confirm your email address";
+  static const String resendEmail = "Resend email";
 
   static const String iAgreeTo = "I agree to";
   static const String privacyPolicy = "Privacy policy";

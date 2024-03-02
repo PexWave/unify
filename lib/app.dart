@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unify/features/authentication/screens/login/login.dart';
+import 'package:unify/bindings/general_bindings.dart';
+import 'package:unify/navigation_menu.dart';
+import 'package:unify/utils/theme/theme.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -10,12 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const LoginScreen(),
+      title: 'Unify',
+      initialBinding: GeneralBindings(),
+      themeMode: ThemeMode.system,
+      theme: TAppTheme.lightTheme,
+      home: const CustomBottomNavbar(),
     );
   }
 }

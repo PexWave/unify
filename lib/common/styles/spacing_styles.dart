@@ -8,4 +8,13 @@ class TSpacingStyle {
     bottom: TSizes.defaultSpace,
     right: TSizes.defaultSpace,
   );
+
+  static const EdgeInsetsGeometry defaultPadding= EdgeInsets.only(
+    top: TSizes.defaultSpace,
+    left: TSizes.defaultSpace,
+    bottom: TSizes.defaultSpace,
+    right: TSizes.defaultSpace,
+  );
+
+
 }

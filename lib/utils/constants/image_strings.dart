@@ -1,6 +1,8 @@
 class TImages {
 
-
+  //Lottie Animation
+  static const String docerAnimation = 'assets/animations/loaderLottie.json';
+  static const String staticSuccessIllustration = 'assets/animations/checkanimation.json';
 
   static const String darkAppLogo = '';
   static const String lightAppLogo = '';
