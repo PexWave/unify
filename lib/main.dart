@@ -10,12 +10,12 @@ void main() async {
 
     await dotenv.load(fileName: ".env");
 
-    await Supabase.initialize(
-    url: dotenv.env['PROJECT_URL'].toString(),
-    anonKey: dotenv.env['SUPABASE_ANON_KEY'].toString(),
-  ).then((value) => {
-    Get.put(AuthenticationRepository()),
-    });
+  //   await Supabase.initialize(
+  //   url: dotenv.env['PROJECT_URL'].toString(),
+  //   anonKey: dotenv.env['SUPABASE_ANON_KEY'].toString(),
+  // ).then((value) => {
+  //   Get.put(AuthenticationRepository()),
+  //   });
 
   runApp(const MyApp());
 }
