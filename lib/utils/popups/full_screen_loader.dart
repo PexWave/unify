@@ -12,7 +12,7 @@ class TFullScreenLoader {
        builder: (_) => PopScope(
         canPop: false,
         child: Container(
-          color: TColors.white,
+          color: TColors.secondary100,
           width: double.infinity,
           height: double.infinity,
           child: Column(

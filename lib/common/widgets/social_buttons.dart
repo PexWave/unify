@@ -14,7 +14,7 @@ class SocialButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          decoration: BoxDecoration(border: Border.all(color: TColors.grey), borderRadius: BorderRadius.circular(100)),
+          decoration: BoxDecoration(border: Border.all(color: TColors.secondary300), borderRadius: BorderRadius.circular(100)),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
