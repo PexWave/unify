@@ -9,13 +9,17 @@ class CustomVideoPlayerController extends GetxController with StateMixin {
   @override
   void onInit(){
     super.onInit();
-      change(null, status: RxStatus.loading());
 
-      controller = VideoPlayerController.asset('assets/videos/samplevid.mp4', videoPlayerOptions: VideoPlayerOptions(mixWithOthers: true))
+    initVideoController();
+
+  }
+
+  void initVideoController() async {
+          controller = VideoPlayerController.asset('assets/videos/samplevid.mp4', videoPlayerOptions: VideoPlayerOptions(mixWithOthers: true))
       ..initialize().then((_) {
         change(controller, status: RxStatus.success());
-
       });
+
   }
 
 }

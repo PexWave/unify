@@ -1,0 +1,36 @@
+            //EVENTS
+            SizedBox(
+              width: double.infinity,
+              child: FlutterCarousel(
+                
+                options: CarouselOptions(
+                  height: TSizes.productImageSize, 
+                  showIndicator: true,
+                  slideIndicator: CircularSlideIndicator(),
+                   autoPlayCurve: Curves.fastOutSlowIn,
+                   aspectRatio: 18/9,
+                   viewportFraction: 0.4,
+                   enlargeCenterPage: false,
+                   enableInfiniteScroll: true,
+                   padEnds: true,
+              
+                ),
+                items: [1,2,3,4,5].map((i) {
+                  return Builder(
+                    builder: (BuildContext context) {
+                      return Container(
+                        
+                        width: TSizes.productImageSize,
+                        margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: const BoxDecoration(
+                          color: Colors.amber,
+                          borderRadius: BorderRadius.all(Radius.circular(20))
+                        ),
+                        child: Text('text $i', style: TextStyle(fontSize: 16.0),)
+                      );
+                      
+                    },
+                  );
+                }).toList(),
+              ),
+            ),

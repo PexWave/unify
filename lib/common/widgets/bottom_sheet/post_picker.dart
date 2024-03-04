@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
-Future displayPostPickerSheet(BuildContext context) {
+Future postPickerSheet(BuildContext context) {
 
 
   return showModalBottomSheet(

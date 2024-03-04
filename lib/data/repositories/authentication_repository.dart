@@ -88,7 +88,6 @@ try {
   // RESEND EMAIL VERIFICATION
   Future<void> verifyEmail(String? email) async {
     try {
-    print(email);
     final ResendResponse res = await supabase.auth.resend(
       type: OtpType.signup,
       email: email,

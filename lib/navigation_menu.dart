@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:unify/common/widgets/bottom_sheet/post_picker.dart';
+import 'package:unify/features/authentication/screens/login/widgets/login_sheet.dart';
 import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
+import 'package:unify/features/personalization/screens/user_profile/user_profile.dart';
+import 'package:unify/main.dart';
 
 class CustomBottomNavbar extends StatelessWidget {
   const CustomBottomNavbar({super.key});
@@ -13,11 +16,10 @@ class CustomBottomNavbar extends StatelessWidget {
     final controller = Get.put(NavigationController());
 
     return Scaffold(
-    
     floatingActionButton: FloatingActionButton(
     child: const Icon(Iconsax.add),  
     onPressed: () => {
-      displayPostPickerSheet(context)
+      supabase.auth.currentSession != null ? postPickerSheet(context) : loginOrSignUpSheet(context)
     },
     ),
    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -46,7 +48,7 @@ class NavigationController extends GetxController {
   Iconsax.user,
 ];
 
-  final screens = [const HomeFeed(),Container(color: Colors.blue),Container(color: Colors.red),Container(color: Colors.yellow),];
+  final screens = [const HomeFeed(),Container(color: Colors.blue),Container(color: Colors.red), const UserProfileScreen(),];
   final Rx<int> selectedIndex = 0.obs;
 }
 

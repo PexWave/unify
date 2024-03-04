@@ -11,6 +11,13 @@ class TTexts {
   static const String homeAppBarTitle = "Looking for an apartment?";
   static const String homeAppBarSubTitle = "Sarhan Asakil";
 
+  static const String seeMoreText = "see more";
+
+  // USER PROFILE TEXTS
+  static const String changePhotoText = 'Change photo';
+  static const String followText = 'Follow';
+  static const String messageText = 'Message';
+
   //Authentication texts
   static const String loginTitle = "Sign in";
   static const String signupTitle = "Sign up";
@@ -19,6 +26,7 @@ class TTexts {
   static const String password = "Password";
   static const String newPassword = "New password";
   static const String confirmPassword = "Confirm password";
+  static const String logOut = 'Logout';
 
   static const String createAccount = "Create account";
   static const String alreadyHaveAnAccount = "Already have an account?";
@@ -87,3 +95,5 @@ static List<String> getcollegeCourses(String collegeName) {
   TCollegeWithCourses('College of Engineering', ['Computer Science', 'Mechanical Engineering', 'Electrical Engineering']),
   TCollegeWithCourses('College of Nursing', ['BS Nursing', 'Registered Nurse Program']),
 ];
+
+

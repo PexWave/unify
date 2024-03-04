@@ -161,3 +161,13 @@ class NavigationController extends GetxController {
   final screens = [const HomeFeed(),Container(color: Colors.blue),Container(color: Colors.red),Container(color: Colors.yellow),];
   final Rx<int> selectedIndex = 0.obs;
 }
+
+
+
+//REMEBER ME LOGIN 
+Row(
+  children: [
+    Checkbox(value: true, onChanged: (value){}),
+    const Text(TTexts.rememberMe),
+  ],
+),

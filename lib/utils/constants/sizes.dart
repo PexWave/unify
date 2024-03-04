@@ -76,6 +76,11 @@ class TSizes {
   static const double gridViewSpacing = 16.0;
 
 
+  //profile sizes
+  static const profilePictureRadius = 60.0;
+  static const profilePictureWidth = 250.0;
+  static const profilePictureHeight = 250.0;
+
 
 
 }
