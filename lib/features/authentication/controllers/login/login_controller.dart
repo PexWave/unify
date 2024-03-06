@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
+import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
 import 'package:unify/features/personalization/controllers/profile_controller.dart';
 import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/constants/image_strings.dart';

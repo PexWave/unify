@@ -34,6 +34,8 @@ dependencies:
   connectivity_plus: ^2.3.8
   cached_network_image: ^3.3.1
   flutter_carousel_widget: ^2.2.0
+  app_bar_with_search_switch: ^1.8.4
+  autoscale_tabbarview: ^1.0.2
 
 
 dev_dependencies:

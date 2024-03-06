@@ -14,6 +14,7 @@ class TSizes {
   static const double iconSm = 16.0;
   static const double iconMd = 24.0;
   static const double iconLg = 32.0;
+  static const double logo = 96.0;
 
 
   //Font sizes
@@ -22,12 +23,13 @@ class TSizes {
   static const double fontSizeLg = 18.0;
 
   //Button sizes
-
+  static const double uploadButtonHeight = 52.0;
   static const double buttonHeight = 18.0;
   static const double buttonRadius = 12.0;
   static const double buttonWidth = 120.0;
   static const double buttonElevation = 4.0;
 
+  static const double sendMessageButtonWidth = 30.0;
   //DropDown Sizes
 
   //Appbar height
@@ -43,6 +45,12 @@ class TSizes {
   static const double borderRadiusSm = 4.0;
   static const double borderRadiusMd = 8.0;
   static const double borderRadiusLg = 12.0;
+    static const double borderRadiusXl = 24.0;
+
+
+  //User profile picture radius
+  static const double userProfileRadiusSm = 30;
+  static const double userProfileRadiusLg = 60;
 
 
   //divider height
@@ -80,6 +88,16 @@ class TSizes {
   static const profilePictureRadius = 60.0;
   static const profilePictureWidth = 250.0;
   static const profilePictureHeight = 250.0;
+
+
+
+  //Card sizes
+  static const cardHeightLg = 260.0;
+  static const cardWidthLg = 260.0;
+
+  static const cardRadius = 120.0;
+  static const cardHeight = 140.0;
+  static const cardWidth = 140.0;
 
 
 

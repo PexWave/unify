@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
-import 'package:unify/common/widgets/form_divider.dart';
-import 'package:unify/common/widgets/social_buttons.dart';
+import 'package:unify/common/widgets/divider/form_divider.dart';
+import 'package:unify/common/widgets/social_buttons/social_buttons.dart';
 import 'package:unify/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:unify/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:unify/utils/constants/sizes.dart';

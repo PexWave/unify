@@ -4,6 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:unify/features/authentication/screens/login/login.dart';
 import 'package:unify/features/authentication/screens/signup/verification.dart';
+import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
 import 'package:unify/main.dart';
 import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/popups/loaders.dart';
@@ -106,7 +107,7 @@ try {
 
     try {
       await supabase.auth.signOut();
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() => const HomeFeed());
     } catch (e) {
       throw 'Something went wrong. Try again!';
     }

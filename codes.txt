@@ -171,3 +171,12 @@ Row(
     const Text(TTexts.rememberMe),
   ],
 ),
+
+
+
+            const SizedBox(height: TSizes.spaceBtwInputFields,),
+            SizedBox(
+            height: TSizes.uploadButtonHeight,
+            width: double.infinity,
+            child: ElevatedButton(child: Text(TTexts.createAnOrganization, style: Theme.of(context).textTheme.titleMedium,), style: TButtonStyles.uploadButtonStyle, onPressed: (){},),
+          ),

@@ -25,6 +25,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  app_bar_with_search_switch:
+    dependency: "direct main"
+    description:
+      name: app_bar_with_search_switch
+      sha256: "831f5c0da26f49ab08e2b929a938534cb7fa58311939d20da5902c7bf0ce6818"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.8.4"
   app_links:
     dependency: transitive
     description:
@@ -57,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  autoscale_tabbarview:
+    dependency: "direct main"
+    description:
+      name: autoscale_tabbarview
+      sha256: "29449e8876185acc4763cc6cf26ffcc3f842f42f1502d5964c6d85f489ee1bc4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   boolean_selector:
     dependency: transitive
     description:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unify/common/widgets/animation_loader.dart';
+import 'package:unify/common/widgets/loader/animation_loader.dart';
 import 'package:unify/utils/constants/colors.dart';
 
 class TFullScreenLoader {

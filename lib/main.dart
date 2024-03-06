@@ -6,9 +6,8 @@ import 'package:unify/app.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
 
 void main() async {
-
     await dotenv.load(fileName: ".env");
-
+    
     await Supabase.initialize(
     url: dotenv.env['PROJECT_URL'].toString(),
     anonKey: dotenv.env['SUPABASE_ANON_KEY'].toString(),

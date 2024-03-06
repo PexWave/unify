@@ -13,10 +13,39 @@ class TTexts {
 
   static const String seeMoreText = "see more";
 
+  //HOME FEESD TEXTS
+  static const String uploadPhotoOrVideo = "Upload Photos/Video";
+  static const String createAnOrganization = "Create an organization";
+  static const String uploadMerch = "Upload a Merch";
+
+  //UPLOAD TEXTS
+  static const String title = "Title...";
+  static const String description = "Description";
+  static const String photos = "Photos";
+  static const String videos = "Videos";
+  static const String choose = "Choose";
+  static const String or = "or";
+  static const String hashtags = "Hashtags";
+  static const String uploadText = "Upload";
+
+  //MERCH
+  static const String merchName = "Merch Name";
+  static const String merchPrice = "Merch Price";
+
+  //ORGANIZATION
+  static const String organizationName = "Organization Name";
+  static const String organizationBio = "Organization Bio";
+
   // USER PROFILE TEXTS
   static const String changePhotoText = 'Change photo';
   static const String followText = 'Follow';
   static const String messageText = 'Message';
+  static const String following = "Following";
+  static const String follower = "Follower";
+  static const String likes = "likes";
+  static const String upload = "uploads";
+
+
 
   //Authentication texts
   static const String loginTitle = "Sign in";
@@ -69,7 +98,15 @@ class TTexts {
   //Course List
   static const List<String> studentYears = ['1', '2', '3', '4'];
 
-  //
+  //SAMPLE TEXT
+  static const String sampleBodyText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently ";
+  static const String sampleAddressText = "College of Computing Studies, 2nd Floor Student Council Office, Campus B Western Mindanao State University";
+  static const String sampleFollowingsText ="200";
+  static const String sampleFollowers = "200";
+  static const String sampleLikes = "1.5";
+  static const String uploads = "10";
+
+
 }
 
 class TCollegeWithCourses {

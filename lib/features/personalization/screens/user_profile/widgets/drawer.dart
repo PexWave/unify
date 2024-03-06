@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unify/data/repositories/authentication_repository.dart';
+import 'package:unify/features/personalization/controllers/profile_controller.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 
 class ProfileDrawer extends StatelessWidget {
@@ -12,7 +14,10 @@ class ProfileDrawer extends StatelessWidget {
       
     child: ListView(
         children:  [
-               TextButton(onPressed:(){}, child: Text(TTexts.logOut, style: Theme.of(context).textTheme.headlineSmall,)),
+              ListTile(
+                onTap: () => print("clicked"),
+                title: Text(TTexts.logOut),
+              )
             ],
           ),
         );

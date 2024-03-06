@@ -4,7 +4,7 @@ import 'package:animated_custom_dropdown/custom_dropdown.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:unify/common/widgets/dropdown.dart';
+import 'package:unify/common/widgets/dropdown/dropdown.dart';
 import 'package:unify/features/authentication/controllers/signup/college_dropdown_controller.dart';
 import 'package:unify/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:unify/utils/constants/sizes.dart';
