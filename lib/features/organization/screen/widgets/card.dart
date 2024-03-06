@@ -1,8 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/card/card.dart';
 import 'package:unify/features/merchandise/screen/widgets/merch_sheet.dart';
+import 'package:unify/features/organization/screen/organization_profile.dart';
+import 'package:unify/features/organization/screen/widgets/bottom_sheet.dart';
 import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
@@ -31,9 +34,11 @@ class OrganizationCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(width: double.infinity, child: Text("Intern Shirt", style: Theme.of(context).textTheme.titleLarge,)),
+            SizedBox(width: double.infinity, child: Text("New Blazer", style: Theme.of(context).textTheme.titleLarge,)),
             Text("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores placeat nobis dolorum sint voluptas quo distinc consectetur adipisicing", maxLines: 3, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.labelMedium,),
             const SizedBox(height: 6.0,),
+            
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -59,6 +64,6 @@ class OrganizationCard extends StatelessWidget {
       ),
     );
 
-    return CardWidget(imageWidget: imageWidget, content: content);
+    return GestureDetector(onTap:() => Get.to(const OrganizationProfile()), child:CardWidget(imageWidget: imageWidget, content: content));
   }
 }

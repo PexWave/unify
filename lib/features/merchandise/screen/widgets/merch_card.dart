@@ -46,6 +46,6 @@ class MerchCard extends StatelessWidget {
       ),
     );
 
-    return CardWidget(imageWidget: imageWidget, content: content);
+    return GestureDetector(onTap:() => showMerchSheet(context), child: CardWidget(imageWidget: imageWidget, content: content));
   }
 }

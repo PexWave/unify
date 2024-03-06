@@ -19,6 +19,7 @@ class TTexts {
   static const String uploadMerch = "Upload a Merch";
 
   //UPLOAD TEXTS
+  static const String chooseProfilePicture = "Choose Profile Picture";
   static const String title = "Title...";
   static const String description = "Description";
   static const String photos = "Photos";
@@ -27,6 +28,7 @@ class TTexts {
   static const String or = "or";
   static const String hashtags = "Hashtags";
   static const String uploadText = "Upload";
+  static const String create = "Create";
 
   //MERCH
   static const String merchName = "Merch Name";
@@ -44,6 +46,7 @@ class TTexts {
   static const String follower = "Follower";
   static const String likes = "likes";
   static const String upload = "uploads";
+  static const String createOrganization = "Create organization";
 
 
 

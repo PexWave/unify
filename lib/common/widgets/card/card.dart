@@ -15,25 +15,22 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => showMerchSheet(context),
-      child: Container(
-        height: TSizes.cardHeight,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(TSizes.borderRadiusMd),
-          color: Colors.transparent,
-          border: Border.all(
-            color: TColors.secondary300,
-            width: 1.0,
-          ),
+    return Container(
+      height: TSizes.cardHeight,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(TSizes.borderRadiusMd),
+        color: Colors.transparent,
+        border: Border.all(
+          color: TColors.secondary300,
+          width: 1.0,
         ),
-        child: Row(
-          children: [
-            imageWidget,
-            content,
-          ],
-        ),
+      ),
+      child: Row(
+        children: [
+          imageWidget,
+          content,
+        ],
       ),
     );
   }

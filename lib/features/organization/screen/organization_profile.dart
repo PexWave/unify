@@ -1,29 +1,23 @@
-import 'dart:collection';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:unify/common/styles/button_styles.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/custom_tab/custom_tab.dart';
 import 'package:unify/common/widgets/drawer/drawer.dart';
 import 'package:unify/common/widgets/follow_or_message/follow_or_message.dart';
 import 'package:unify/common/widgets/profile_picture/profile_picture.dart';
 import 'package:unify/features/feed/screens/post/post.dart';
+import 'package:unify/features/merchandise/screen/widgets/merch_card.dart';
 import 'package:unify/features/organization/screen/widgets/card.dart';
 import 'package:unify/features/personalization/controllers/profile_controller.dart';
-import 'package:unify/features/personalization/screens/profile_picture/profile_picture_viewer.dart';
 import 'package:unify/common/widgets/tab_bar/tab_bar.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
-import 'package:unify/utils/device/device_utility.dart';
-import 'package:unify/utils/helpers/helper_functions.dart';
 
-class UserProfileScreen extends GetView<CProfileController> {
-  const UserProfileScreen({super.key});
+
+class OrganizationProfile extends GetView<CProfileController> {
+  const OrganizationProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -60,9 +54,9 @@ class UserProfileScreen extends GetView<CProfileController> {
               ),
             
               const SizedBox(height: TSizes.spaceBtwInputFields,),
+
               //NAME
-            
-              Text(state!.firstName.toString()),
+              Text("The New Blazer", style: Theme.of(context).textTheme.titleMedium,),
                     
               const SizedBox(height: TSizes.spaceBtwInputFields * 0.2,),
               
@@ -81,21 +75,11 @@ class UserProfileScreen extends GetView<CProfileController> {
                 
               const ProfileTabBarNavigation(
                 tabs:  [
-                     Tab(icon: Icon(Icons.people),),
                      Tab(icon: Icon(Icons.post_add_outlined)),
-                     Tab(icon: Icon(Icons.favorite),),
-                     Tab(icon: Icon(Icons.bookmark_add_outlined)),
+                     Tab(icon: Icon(Icons.shop_2_outlined),),
+                     Tab(icon: Icon(Icons.people)),
                 ],
                 children: [
-
-                      //ORGANIZATIONS
-                     Column(
-                      children: [
-                         SizedBox(height: TSizes.spaceBtwItems,),
-                         OrganizationCard(),
-
-                      ],
-                    ),
 
                       //POSTS
                        Column(
@@ -106,11 +90,11 @@ class UserProfileScreen extends GetView<CProfileController> {
                         ],
                       ),
 
-                      //FAVORITES
+                      //MERCHANDISE
                        Column(
                         children: [
-                            PostScreen(),
-                            PostScreen(),
+                            MerchCard(),
+                  
 
                         ],
                       ),
@@ -119,8 +103,7 @@ class UserProfileScreen extends GetView<CProfileController> {
                       //BOOKMARK
                        Column(
                         children: [
-                            PostScreen(),
-                            PostScreen(),
+                            
 
                         ],
                       ),

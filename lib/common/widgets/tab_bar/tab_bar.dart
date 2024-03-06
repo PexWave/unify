@@ -4,24 +4,21 @@ import 'package:unify/utils/constants/text_strings.dart';
 import 'package:autoscale_tabbarview/autoscale_tabbarview.dart';
 
 
-
 class ProfileTabBarNavigation extends StatelessWidget {
-  final List<Tab> myTabs = <Tab>[
-    const Tab(text: "orgs"),
-    const Tab(text: "post"),
-    const Tab(text: "favorites"),
-    const Tab(text: "bookmarks"),
-  ];
+  final List<Tab> tabs;
+  final List<Widget> children;
+
+  const ProfileTabBarNavigation({required this.tabs, required this.children, super.key});
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: tabs.length, // Use the length of the provided tabs
       initialIndex: 0,
       child: Column(
         children: [
           TabBar(
-            tabs: myTabs,
+            tabs: tabs,
             unselectedLabelColor: Colors.black54,
             labelColor: Colors.black,
             indicatorSize: TabBarIndicatorSize.tab,
@@ -32,28 +29,10 @@ class ProfileTabBarNavigation extends StatelessWidget {
             ),
           ),
           AutoScaleTabBarView(
-            children: <Widget>[
-              Column(
-                children: [
-                     PostScreen(),
-                     PostScreen(),
-
-                ],
-              ),
-              Container(
-                color: Colors.yellow,
-              ),
-                            Container(
-                color: Colors.yellow,
-              ),
-                            Container(
-                color: Colors.yellow,
-              ),
-            ],
+            children: children,
           ),
         ],
       ),
     );
   }
 }
-
