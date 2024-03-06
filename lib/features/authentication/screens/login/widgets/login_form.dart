@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:unify/features/authentication/controllers/login/login_controller.dart';
 import 'package:unify/features/authentication/screens/signup/signup.dart';
-import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 import 'package:unify/utils/validators/validation.dart';

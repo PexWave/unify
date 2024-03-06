@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
-import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
-import 'package:unify/features/personalization/controllers/profile_controller.dart';
 import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/constants/image_strings.dart';
 import 'package:unify/utils/helpers/network_manager.dart';
@@ -42,7 +40,7 @@ class CLoginController extends GetxController {
     }
 
     //SIGN IN USER USING EMAIL AND PASSWORD
-    final res = await AuthenticationRepository
+    await AuthenticationRepository
     .instance
     .loginUser
       (

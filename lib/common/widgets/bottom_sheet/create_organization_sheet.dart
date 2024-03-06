@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:unify/common/styles/button_styles.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/utils/constants/colors.dart';
@@ -29,7 +28,7 @@ Future createOrganizationSheet(BuildContext context) {
               // obscureText: signUpFormController.hidePassword.value,
               // controller: signUpFormController.password,
               // validator: (value) => TValidator.validatePassword(value),
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: TTexts.organizationName,
                 // suffixIcon: IconButton(
                 //   onPressed: () => signUpFormController.hidePassword.value = !signUpFormController.hidePassword.value,
@@ -45,7 +44,7 @@ Future createOrganizationSheet(BuildContext context) {
               // obscureText: signUpFormController.hidePassword.value,
               // controller: signUpFormController.password,
               // validator: (value) => TValidator.validatePassword(value),
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: TTexts.organizationBio,
                 // suffixIcon: IconButton(
                 //   onPressed: () => signUpFormController.hidePassword.value = !signUpFormController.hidePassword.value,
@@ -62,7 +61,7 @@ Future createOrganizationSheet(BuildContext context) {
               // obscureText: signUpFormController.hidePassword.value,
               // controller: signUpFormController.password,
               // validator: (value) => TValidator.validatePassword(value),
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: TTexts.description,
                 // suffixIcon: IconButton(
                 //   onPressed: () => signUpFormController.hidePassword.value = !signUpFormController.hidePassword.value,
@@ -96,7 +95,10 @@ Future createOrganizationSheet(BuildContext context) {
             SizedBox(
               height: TSizes.uploadButtonHeight,
               width: double.infinity,
-              child: ElevatedButton(child: Text(TTexts.create, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),), style: TButtonStyles.uploadButtonStyle, onPressed: (){},),
+              child: ElevatedButton(
+              style: TButtonStyles.uploadButtonStyle, onPressed: (){},
+              child: Text(TTexts.create, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white),)
+              ),
             ),
 
             ],

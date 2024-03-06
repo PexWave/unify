@@ -9,11 +9,9 @@ import 'package:unify/common/widgets/follow_or_message/follow_or_message.dart';
 import 'package:unify/common/widgets/profile_picture/profile_picture.dart';
 import 'package:unify/features/feed/screens/post/post.dart';
 import 'package:unify/features/merchandise/screen/widgets/merch_card.dart';
-import 'package:unify/features/organization/screen/widgets/card.dart';
 import 'package:unify/features/personalization/controllers/profile_controller.dart';
 import 'package:unify/common/widgets/tab_bar/tab_bar.dart';
 import 'package:unify/utils/constants/sizes.dart';
-import 'package:unify/utils/constants/text_strings.dart';
 
 
 class OrganizationProfile extends GetView<CProfileController> {

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/card/card.dart';
 import 'package:unify/features/merchandise/screen/widgets/merch_sheet.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
 
@@ -19,8 +18,8 @@ class MerchCard extends StatelessWidget {
         fit: BoxFit.cover,
         width: TSizes.cardWidth,
         height: TSizes.cardHeight,
-        placeholder: (context, url) => CircularProgressIndicator(),
-        errorWidget: (context, url, error) => Icon(Icons.error),
+        placeholder: (context, url) => const CircularProgressIndicator(),
+        errorWidget: (context, url, error) => const  Icon(Icons.error),
       ),
     );
 

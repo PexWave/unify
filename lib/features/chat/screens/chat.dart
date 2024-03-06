@@ -19,19 +19,17 @@ class ChatBox extends StatelessWidget {
           toolbarHeight: 80,
           title: Row(
             children: [
-                     Container(
-                  child: CircleAvatar(
-                  radius: TSizes.userProfileRadiusSm,
-                  child: ClipOval(
-                    child: CachedNetworkImage(
-                      imageUrl:  "https://plus.unsplash.com/premium_photo-1675034393381-7e246fc40755?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                      fit: BoxFit.cover,
-                      width: 50,
-                      height: 50,
-                    ),
-                  ),
-                 ),
-                ),      
+                     CircleAvatar(
+                     radius: TSizes.userProfileRadiusSm,
+                     child: ClipOval(
+                       child: CachedNetworkImage(
+                         imageUrl:  "https://plus.unsplash.com/premium_photo-1675034393381-7e246fc40755?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                         fit: BoxFit.cover,
+                         width: 50,
+                         height: 50,
+                       ),
+                     ),
+                                      ),      
 
                 const SizedBox(width: TSizes.spaceBtwItems,),
 
@@ -47,31 +45,29 @@ class ChatBox extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwItems,),
 
           //SEND MESSAGE
-          Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-            
-                    SizedBox(
-                      width: TDeviceUtils.getScreenWidth() * 0.79,
-                      child: TextFormField(
-                      // obscureText: signUpFormController.hidePassword.value,
-                      // controller: signUpFormController.password,
-                      // validator: (value) => TValidator.validatePassword(value),
-                      decoration: TTextFormFieldStyles.customFormFieldDecoration,
-                                      
-                                        ),
-                    ),
-            
-                  const SizedBox(width: TSizes.xs,),
-            
-                  const SizedBox(
-                    width: TSizes.sendMessageButtonWidth,
-                    child: Icon(Icons.send_outlined, color: TColors.primary,),
-                  )
-              ],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+          
+                  SizedBox(
+                    width: TDeviceUtils.getScreenWidth() * 0.79,
+                    child: TextFormField(
+                    // obscureText: signUpFormController.hidePassword.value,
+                    // controller: signUpFormController.password,
+                    // validator: (value) => TValidator.validatePassword(value),
+                    decoration: TTextFormFieldStyles.customFormFieldDecoration,
+                                    
+                                      ),
+                  ),
+          
+                const SizedBox(width: TSizes.xs,),
+          
+                const SizedBox(
+                  width: TSizes.sendMessageButtonWidth,
+                  child: Icon(Icons.send_outlined, color: TColors.primary,),
+                )
+            ],
           ),
 
           ],
@@ -92,7 +88,7 @@ class MessageContainer extends StatelessWidget {
       
       mainAxisSize: MainAxisSize.min,
       children: [
-      Container(
+      SizedBox(
       width: 50,
       height: 50,
       child: CircleAvatar(

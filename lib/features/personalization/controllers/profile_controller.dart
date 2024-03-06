@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
-import 'package:unify/features/authentication/models/User.dart';
-import 'package:unify/features/feed/screens/homefeed/homefeed.dart';
+import 'package:unify/features/authentication/models/user.dart';
 import 'package:unify/navigation_menu.dart';
 import 'package:unify/utils/popups/loaders.dart';
 import 'package:video_player/video_player.dart';

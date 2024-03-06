@@ -35,8 +35,8 @@ Future showMerchSheet(BuildContext context) {
                   fit: BoxFit.cover,
                   width: TDeviceUtils.getScreenWidth() * 0.89,
                   height: TDeviceUtils.getScreenHeight() * 0.57,
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  placeholder: (context, url) => const CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
                 ),
               ),
       
@@ -57,7 +57,7 @@ Future showMerchSheet(BuildContext context) {
 
               Row(
               children: [
-                  Icon(Icons.shop_two_outlined),
+                  const Icon(Icons.shop_two_outlined),
                   const SizedBox(width: TSizes.spaceBtwItems,),
                   Expanded(child: Text(TTexts.sampleAddressText, maxLines: 3, style: Theme.of(context).textTheme.labelLarge,)),
                 ],

@@ -2,7 +2,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unify/features/feed/controllers/post_controller.dart';
 import 'package:unify/features/personalization/screens/user_profile/user_profile.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
@@ -20,7 +19,6 @@ class PostHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final postController = PostController.instance;
     final RxBool isPersonAdded = RxBool(false); // Unique state variable
 
     return Row(

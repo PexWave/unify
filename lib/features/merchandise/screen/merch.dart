@@ -1,9 +1,7 @@
 import 'package:app_bar_with_search_switch/app_bar_with_search_switch.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/features/merchandise/screen/widgets/merch_card.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
 class MerchScreen extends StatelessWidget {

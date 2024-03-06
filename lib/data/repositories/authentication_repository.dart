@@ -89,14 +89,13 @@ try {
   // RESEND EMAIL VERIFICATION
   Future<void> verifyEmail(String? email) async {
     try {
-    final ResendResponse res = await supabase.auth.resend(
+      await supabase.auth.resend(
       type: OtpType.signup,
       email: email,
     );
 
     
     } catch (e) {
-      print(e.toString());
       TLoaders.errorSnackBar(title: 'Oh Snappy!', message: e.toString());
     }
   }

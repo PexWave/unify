@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:unify/features/chat/screens/chat.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';

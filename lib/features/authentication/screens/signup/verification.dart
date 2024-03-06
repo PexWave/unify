@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
 import 'package:unify/features/authentication/controllers/signup/verify_email_controller.dart';
-import 'package:unify/features/authentication/screens/login/login.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 

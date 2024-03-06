@@ -1,8 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 

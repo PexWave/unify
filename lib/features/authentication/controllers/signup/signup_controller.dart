@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/data/repositories/authentication_repository.dart';
 import 'package:unify/features/authentication/screens/signup/verification.dart';
-import 'package:unify/main.dart';
 import 'package:unify/utils/constants/image_strings.dart';
 import 'package:unify/utils/helpers/network_manager.dart';
 import 'package:unify/utils/popups/full_screen_loader.dart';

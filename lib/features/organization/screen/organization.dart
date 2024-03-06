@@ -31,7 +31,7 @@ class OrganizationScreen extends StatelessWidget {
             padding: TSpacingStyle.defaultPadding,
             child: Column(
               children: [
-                const OrganizationCard(),
+                 OrganizationCard(),
               ],
             ),
           ),

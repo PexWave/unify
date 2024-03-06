@@ -1,4 +1,3 @@
-import 'package:unify/utils/logging/logger.dart';
 
 class TValidator {
   static String? validateEmail(String? value) {
@@ -54,6 +53,8 @@ class TValidator {
         if (value == null || value.isEmpty) {
       return 'this field is required';
     }
+
+    return null;
   }
 
   

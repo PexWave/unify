@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/card/card.dart';
-import 'package:unify/features/merchandise/screen/widgets/merch_sheet.dart';
 import 'package:unify/features/organization/screen/organization_profile.dart';
-import 'package:unify/features/organization/screen/widgets/bottom_sheet.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 
 
@@ -22,8 +19,8 @@ class OrganizationCard extends StatelessWidget {
         fit: BoxFit.cover,
         width: TSizes.cardWidth,
         height: TSizes.cardHeight,
-        placeholder: (context, url) => CircularProgressIndicator(),
-        errorWidget: (context, url, error) => Icon(Icons.error),
+        placeholder: (context, url) => const CircularProgressIndicator(),
+        errorWidget: (context, url, error) => const Icon(Icons.error),
       ),
     );
 
@@ -44,7 +41,7 @@ class OrganizationCard extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.people),
+                    const Icon(Icons.people),
                     const SizedBox(width: TSizes.xs,),
                     Text("22", style: Theme.of(context).textTheme.titleMedium,),
                   ],
@@ -54,7 +51,7 @@ class OrganizationCard extends StatelessWidget {
                   children: [
                         TextButton(onPressed: (){}, child: Text("View profile", style: Theme.of(context).textTheme.titleSmall,)),
                         const SizedBox(width: TSizes.xs,),
-                        Icon(Icons.arrow_forward_outlined),
+                        const Icon(Icons.arrow_forward_outlined),
                   ],
                 )
               ],

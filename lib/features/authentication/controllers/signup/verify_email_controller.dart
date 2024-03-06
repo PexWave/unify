@@ -60,7 +60,6 @@ class VerifyEmailController extends GetxController {
 
   checkEmailVerificationStatus() async {
     final currentUserSession = supabase.auth.currentSession;
-    print(currentUserSession);
     if(currentUserSession != null){
       Get.off(
         () => SuccessScreen(image: TImages.staticSuccessIllustration, title: 'Email Verified!', subTitle: 'Email verification completed!', onPressed: AuthenticationRepository.instance.screenRedirect())

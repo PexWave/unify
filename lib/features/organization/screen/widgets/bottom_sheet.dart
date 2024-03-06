@@ -1,10 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:unify/common/styles/button_styles.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
-import 'package:unify/features/feed/screens/post/widgets/post_header.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
 import 'package:unify/utils/constants/text_strings.dart';
 import 'package:unify/utils/device/device_utility.dart';
@@ -31,8 +27,8 @@ Future organizationBottomSheet(BuildContext context) {
                   fit: BoxFit.cover,
                   width: TDeviceUtils.getScreenWidth() * 0.89,
                   height: TDeviceUtils.getScreenHeight() * 0.57,
-                  placeholder: (context, url) => CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  placeholder: (context, url) => const CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
                 ),
               ),
       

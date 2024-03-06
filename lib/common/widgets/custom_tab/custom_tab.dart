@@ -8,41 +8,33 @@ class CustomTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Container(
-          child: Column(
-            children: [
-              const Text(TTexts.sampleFollowingsText),
-              const Text(TTexts.following)
-            ],
-          ),
+         Column(
+          children: [
+             Text(TTexts.sampleFollowingsText),
+             Text(TTexts.following)
+          ],
         ),
-                      Container(
-          child: Column(
-            children: [
-              const Text(TTexts.sampleFollowingsText),
-              const Text(TTexts.follower)
-            ],
-          ),
-        ),
-                      Container(
-          child: Column(
-            children: [
-              const Text(TTexts.sampleFollowingsText),
-              const Text(TTexts.likes)
-            ],
-          ),
-        ),
-                      Container(
-          child: Column(
-            children: [
-              const Text(TTexts.sampleFollowingsText),
-              const Text(TTexts.upload)
-            ],
-          ),
-        ),
+                       Column(
+                        children: [
+                           Text(TTexts.sampleFollowingsText),
+                           Text(TTexts.follower)
+                        ],
+                      ),
+                       Column(
+                        children: [
+                           Text(TTexts.sampleFollowingsText),
+                           Text(TTexts.likes)
+                        ],
+                      ),
+                      Column(
+                        children: [
+                           Text(TTexts.sampleFollowingsText),
+                           Text(TTexts.upload)
+                        ],
+                      ),
       ],
     );
   }

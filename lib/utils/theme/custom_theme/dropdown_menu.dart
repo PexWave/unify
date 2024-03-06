@@ -8,7 +8,7 @@ class TDropDownMenuTheme{
   static DropdownMenuThemeData lightDropDownTheme = DropdownMenuThemeData(
     textStyle: const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
-    menuStyle: MenuStyle(
+    menuStyle: const MenuStyle(
         
     )
   );

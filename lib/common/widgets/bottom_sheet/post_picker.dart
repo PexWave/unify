@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
+
 import 'package:unify/common/styles/button_styles.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/bottom_sheet/merch_sheet.dart';
@@ -16,7 +15,7 @@ Future postPickerSheet(BuildContext context) {
     context: context, 
     backgroundColor: Colors.transparent,
     isScrollControlled: true,
-    builder: (context) => Container(
+    builder: (context) => SizedBox(
 
       height: 200,
       child: Padding(
@@ -26,20 +25,24 @@ Future postPickerSheet(BuildContext context) {
             SizedBox(
               height: TSizes.uploadButtonHeight,
               width: double.infinity,
-              child: ElevatedButton(child: Text(TTexts.uploadPhotoOrVideo, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: TColors.secondary100),), style: TButtonStyles.uploadButtonStyle, onPressed: () {
+              child: ElevatedButton(style: TButtonStyles.uploadButtonStyle, onPressed: () {
                 Navigator.pop(context);
                 uploadPostSheet(context);
-              },),
+              },
+              child: Text(TTexts.uploadPhotoOrVideo, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: TColors.secondary100),),
+              ),
             ),
 
             const SizedBox(height: TSizes.spaceBtwInputFields,),
             SizedBox(
               height: TSizes.uploadButtonHeight,
               width: double.infinity,
-              child: ElevatedButton(child: Text(TTexts.uploadMerch, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: TColors.secondary100),), style: TButtonStyles.uploadButtonStyle, onPressed: () {
+              child: ElevatedButton( style: TButtonStyles.uploadButtonStyle, onPressed: () {
                 Navigator.pop(context);
                 uploadMerchSheet(context);
-              },),
+              },
+              child: Text(TTexts.uploadMerch, style: Theme.of(context).textTheme.titleMedium?.copyWith(color: TColors.secondary100),),
+              ),
             ),
           ],
         )

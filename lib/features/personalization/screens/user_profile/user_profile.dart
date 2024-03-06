@@ -1,11 +1,7 @@
-import 'dart:collection';
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:unify/common/styles/button_styles.dart';
 import 'package:unify/common/styles/spacing_styles.dart';
 import 'package:unify/common/widgets/custom_tab/custom_tab.dart';
 import 'package:unify/common/widgets/drawer/drawer.dart';
@@ -14,13 +10,8 @@ import 'package:unify/common/widgets/profile_picture/profile_picture.dart';
 import 'package:unify/features/feed/screens/post/post.dart';
 import 'package:unify/features/organization/screen/widgets/card.dart';
 import 'package:unify/features/personalization/controllers/profile_controller.dart';
-import 'package:unify/features/personalization/screens/profile_picture/profile_picture_viewer.dart';
 import 'package:unify/common/widgets/tab_bar/tab_bar.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
-import 'package:unify/utils/constants/text_strings.dart';
-import 'package:unify/utils/device/device_utility.dart';
-import 'package:unify/utils/helpers/helper_functions.dart';
 
 class UserProfileScreen extends GetView<CProfileController> {
   const UserProfileScreen({super.key});

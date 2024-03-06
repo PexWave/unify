@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:unify/features/feed/screens/post/post.dart';
-import 'package:unify/utils/constants/text_strings.dart';
 import 'package:autoscale_tabbarview/autoscale_tabbarview.dart';
 
 

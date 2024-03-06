@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:unify/features/feed/controllers/post_controller.dart';
 
 class TitleAndDescription extends StatelessWidget {
   const TitleAndDescription({

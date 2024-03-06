@@ -1,11 +1,8 @@
 import 'package:app_bar_with_search_switch/app_bar_with_search_switch.dart';
 import 'package:flutter/material.dart';
-import 'package:unify/common/controllers/video_controller.dart';
 import 'package:unify/features/feed/controllers/post_controller.dart';
 import 'package:unify/features/feed/screens/post/post.dart';
-import 'package:unify/utils/constants/colors.dart';
 import 'package:unify/utils/constants/sizes.dart';
-import 'package:video_player/video_player.dart';
 import 'package:get/get.dart';
 
 
@@ -37,7 +34,7 @@ class HomeFeed extends StatelessWidget {
             fit: BoxFit.cover,      
               ),
             ),
-            actions: [
+            actions: const [
               AppBarSearchButton(),
               // or
               // IconButton(onPressed: AppBarWithSearchSwitch.of(context)?startSearch, icon: Icon(Icons.search)),

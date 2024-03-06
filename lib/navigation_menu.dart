@@ -21,11 +21,12 @@ class CustomBottomNavbar extends StatelessWidget {
 
     return Scaffold(
     floatingActionButton: FloatingActionButton(
-    child: const Icon(Iconsax.add, color: TColors.secondary100,),
     backgroundColor: TColors.primary,  
     onPressed: () => {
       supabase.auth.currentSession != null ? postPickerSheet(context) : loginOrSignUpSheet(context)
     },
+    child: const Icon(Iconsax.add, color: TColors.secondary100,),
+
     ),
    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: Obx(
@@ -55,7 +56,7 @@ class NavigationController extends GetxController {
   Icons.person,
 ];
 
-  final screens = [const HomeFeed(), const MerchScreen(), const OrganizationScreen(), supabase.auth.currentSession != null ? const UserProfileScreen() : LoginScreen(),];
+  final screens = [const HomeFeed(), const MerchScreen(), const OrganizationScreen(), supabase.auth.currentSession != null ? const UserProfileScreen() : const LoginScreen(),];
   final Rx<int> selectedIndex = 0.obs;
 }
 
