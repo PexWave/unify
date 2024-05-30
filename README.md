@@ -1,17 +1,65 @@
-UNIFY is a powerful social app built for students at Western Mindanao State University. Developed for the Tech Solution Challenge, UNIFY leverages Flutter and Supabase to foster a vibrant and inclusive campus community by connecting students, organizations, and events.
+Sure! Here's a well-organized GitHub repository description for UNIFY:
 
-Key Features:
+---
 
-Connect and Engage:
-Real-time Chat: Connect with fellow students and organization members instantly.
-Organization Pages: Explore and join student organizations, stay updated on their activities, and interact with other members.
-Event Listings: Discover upcoming events and workshops hosted by various organizations and departments.
-Active Participation:
-RSVP and Registration: Easily register for events and manage your attendance.
-Donation Drives: Support worthy causes by participating in donation drives organized by student organizations.
-Volunteering Opportunities: Find and sign up for volunteer opportunities to contribute to the community.
-Built with Supabase, UNIFY empowers students to:
+# UNIFY - The Social App for Western Mindanao State University Students
 
-Stay informed: Get notified about important announcements, events, and updates from organizations and the university.
-Connect with like-minded individuals: Find others who share your interests and passions.
-Contribute to the community: Get involved in meaningful activities and make a positive impact.
+UNIFY is a powerful Flutter social app developed for the Tech Solution Challenge, specifically designed for students at Western Mindanao State University. It leverages Flutter and Supabase to create a vibrant and inclusive campus community, connecting students, organizations, and events.
+
+## Key Features
+
+### Connect and Engage
+
+- **Real-time Chat**: Instantly connect with fellow students and organization members.
+- **Organization Pages**: Explore and join student organizations, stay updated on their activities, and interact with other members.
+- **Event Listings**: Discover upcoming events and workshops hosted by various organizations and departments.
+
+### Active Participation
+
+- **RSVP and Registration**: Easily register for events and manage your attendance.
+- **Donation Drives**: Support worthy causes by participating in donation drives organized by student organizations.
+- **Volunteering Opportunities**: Find and sign up for volunteer opportunities to contribute to the community.
+
+## Empowering Students with Supabase
+
+- **Stay Informed**: Get notified about important announcements, events, and updates from organizations and the university.
+- **Connect with Like-minded Individuals**: Find others who share your interests and passions.
+- **Contribute to the Community**: Get involved in meaningful activities and make a positive impact.
+
+## Technologies Used
+
+- **Flutter**: For building a beautiful and responsive user interface.
+- **Supabase**: For a robust and scalable backend infrastructure.
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Supabase account and credentials
+
+### Installation
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/pexwave/unify.git
+    cd unify
+    ```
+
+2. **Install Dependencies**:
+    ```bash
+    flutter pub get
+    ```
+
+3. **Set Up Environment Variables**:
+    Create a `.env` file and add your Supabase credentials:
+    ```env
+    SUPABASE_URL=your_supabase_url
+    SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
+
+4. **Run the App**:
+    ```bash
+    flutter run
+    ```
+
