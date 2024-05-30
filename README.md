@@ -1,6 +1,4 @@
-Sure! Here's a well-organized GitHub repository description for UNIFY:
 
----
 
 # UNIFY - The Social App for Western Mindanao State University Students
 
